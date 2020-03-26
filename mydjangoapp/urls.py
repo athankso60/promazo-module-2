@@ -19,6 +19,5 @@ from django.urls import path, include #imported include
 urlpatterns = [
     path('quiz/', include('quiz.urls')),
     path('admin/', admin.site.urls),
-    path('nested_admin/', include('nested_admin.urls')), #NEWWWW!!
 
 ]

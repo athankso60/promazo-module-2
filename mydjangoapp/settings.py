@@ -25,7 +25,7 @@ SECRET_KEY = '35y*%8$3n7!v*2%puq^)i^z!-a_u8=nke*g2qvik)3aobtv)st'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*',]
 
 
 # Application definition
@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'quiz',
-    'nested_admin',
+    'bootstrap4',
 ]
 
 MIDDLEWARE = [
@@ -124,5 +124,3 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
-ALLOWED_HOSTS=['ec2-3-17-67-99.us-east-2.compute.amazonaws.com','3.17.67.99']
-
