@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Register</title>
+</head>
+
+<body>
+    <h1>Register Now!</h1>
+    <form method="POST" action="{%url 'register' %}">
+        {%csrf_token%} {% if form.errors%}
+        <p>There are errors in the form!</p>
+        {% endif %} {{form}} <br>
+
+        <label for="id_username">User group:</label>
+        <select class="form-control" name="group" required id="id_group">
+					<option value="quiz_takers">Quiz Taker</option>
+					<option value="quiz_makers">Quiz Maker</option>
+					<option value="quiz_admins">Quiz Admin</option>
+				</select>
+        <br>
+        <input type="submit" value="Register">
+
+    </form>
+</body>
+
+</html>

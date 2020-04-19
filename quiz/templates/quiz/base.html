@@ -1,4 +1,7 @@
 <html>
 <h1>Welcome to our App!</h1>
+{%if user.is_authenticated%}
+<a href="/accounts/logout"><button class="btn-danger">Logout</button></a> {%else%}
+<a href="/accounts/login"><button class="btn-danger">Login Here</button></a> {%endif%}
 
 </html>
